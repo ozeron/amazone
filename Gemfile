@@ -21,6 +21,8 @@ gem 'slim-rails'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
