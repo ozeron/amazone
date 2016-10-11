@@ -1,0 +1,14 @@
+= link_to('Add product', new_product_path, class: 'btn btn-primary pull-right')
+- if @products.empty?
+  h2 Add your first product!
+- else
+  dl
+    - @products.each do |product|
+      dd
+        = product.name
+      dt
+        dl
+          - product.search_terms.each do |term|
+          dd
+            term
+            
