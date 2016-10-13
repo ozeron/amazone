@@ -12,3 +12,18 @@
 !/log/.keep
 /tmp
 *.pem
+
+# Ignore Cloud9 IDE files
+/.c9/
+
+# Ignore IDEA files
+/.idea/
+
+# Ignore Deluge files
+**/.directory
+
+# Ignore precompiled assets
+/public/assets
+
+# Ignore uploads
+/public/uploads/
