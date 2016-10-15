@@ -12,3 +12,6 @@
 !/log/.keep
 /tmp
 *.pem
+
+# Ignore application configuration
+/config/application.yml

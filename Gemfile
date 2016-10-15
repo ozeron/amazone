@@ -6,6 +6,7 @@ gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'vacuum'
+gem 'figaro'
 # Use LESS for stylesheets
 gem 'therubyracer'
 gem 'sprockets', '3.6.3'
