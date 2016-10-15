@@ -1,3 +1,3 @@
-if Rails.env.development? || Rails.env.production?
+if Rails.env.development? || Rails.env.test?
   FactoryGirl.find_definitions
 end
