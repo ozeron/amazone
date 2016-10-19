@@ -29,7 +29,7 @@ class Service
   end
 
   def succeed?
-    @status == true
+    @status
   end
 
   def failed?
