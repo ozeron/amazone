@@ -1,5 +1,5 @@
 set :branch, 'master'
-set :domain_app, 'ec2-54-69-168-88.us-west-2.compute.amazonaws.com'
+set :domain_app, '128.199.45.76'
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
