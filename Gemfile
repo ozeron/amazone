@@ -7,6 +7,7 @@ gem 'thin'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+# Light-weight Ruby wrapper to the Amazon Product Advertising API
 gem 'vacuum'
 gem 'figaro'
 # Use LESS for stylesheets
@@ -26,7 +27,6 @@ gem 'slim-rails'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 
-gem 'vacuum'
 gem 'nokogiri'
 
 gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler'
@@ -45,8 +45,6 @@ gem 'pry-rails'
 
 # Backend for ActiveJobs
 gem 'resque'
-# Light-weight Ruby wrapper to the Amazon Product Advertising API
-gem 'vacuum'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
