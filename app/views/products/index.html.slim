@@ -1,4 +1,6 @@
 = link_to('Add product', new_product_path, class: 'btn btn-primary pull-right')
+br
+br
 - if @products.empty?
   h2 Add your first product!
 - else
@@ -6,8 +8,10 @@
     - @products.each do |product|
       dd
         = product.name
+        = link_to('Add SearchTerms', new_product_search_term_path(product), class: 'btn btn-primary pull-right')
       dt
         dl
           - product.search_terms.each do |term|
-          dd
-            term
+            dd
+              = term.term
+      br

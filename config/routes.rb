@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :products
+  resources :products do
+    resources :search_terms
+  end
 
   root to: 'products#index'
 

@@ -1,0 +1,4 @@
+= form_tag(product_search_terms_path(@product)) do |f|
+  = text_area_tag(:search_terms, '', size: "80x10")
+  br
+  = button_tag('Submit', {class: 'btn btn-primary'})
