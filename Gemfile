@@ -15,6 +15,8 @@ gem 'therubyracer'
 gem 'sprockets', '3.6.3'
 gem 'sprockets-es6'
 
+gem 'resque'
+
 gem 'less-rails' # Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
