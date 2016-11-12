@@ -4,13 +4,14 @@ class UpdateSearchRankService < Service
   ITEMS_PER_PAGE = 10
   ALL_CATEGORY_AVAILABLE_PAGES = 5
 
-  def initialize(search_rank_id)
+  def initialize(search_term_id)
     super
     # Initialize request params
-    @rank = Rank.find_by_id(search_rank_id)
-    raise "Rank with id=#{search_rank_id} not found." if @rank.nil?
-    @term = @rank.search_term.term
-    @asin = @rank.search_term.product.asin
+    @search_term = SearchTerm.find_by_id(id: search_term_id)
+    raise "Rank with id=#{search_term_id} not found." if @rank.nil?
+    @rank = @search_term.ranks.where(date: Date.today).first_or_initialize
+    @term = @search_term.term
+    @asin = @search_term.product.asin
   end
 
   private
@@ -20,7 +21,7 @@ class UpdateSearchRankService < Service
 
     # Store information to items array
     1.upto(ALL_CATEGORY_AVAILABLE_PAGES) do |item_page|
-      items.concat get_items(make_request(item_page), item_page)
+      items.concat(get_items(make_request(item_page), item_page))
     end
 
     save_search_rank(items)
