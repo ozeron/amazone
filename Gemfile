@@ -78,4 +78,5 @@ group :development do
   gem 'capistrano-bundler', '~> 1.1.2', require: false
   gem 'capistrano-rails', '~> 1.1', require: false
   gem 'capistrano-rbenv', require: false
+  gem 'capistrano-foreman', require: 'false'
 end
