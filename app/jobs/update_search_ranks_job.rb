@@ -3,6 +3,7 @@ class UpdateSearchRanksJob < ActiveJob::Base
 
   def perform
     SearchTerm.all.pluck(:id).each do |id|
+      puts 'performing: UpdateSearchRanksJob'
       UpdateSearchRankJob.perform_later(id)
     end
   end

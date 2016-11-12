@@ -17,6 +17,8 @@ gem 'sprockets-es6'
 
 gem 'resque'
 gem 'clockwork'
+gem 'foreman'
+gem 'resque-scheduler'
 
 gem 'less-rails' # Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem 'twitter-bootstrap-rails'
